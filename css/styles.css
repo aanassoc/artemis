@@ -1,0 +1,181 @@
+h1, h2, h3 { letter-spacing: -1px; }
+
+.navbar { margin-bottom: 0; }
+
+.navbar-header { 
+	float: left; 
+	padding: 15px; 
+	text-align: center; 
+	width: 100%; 
+}
+
+.navbar-brand { 
+	float:none; 
+	font-size: 24px; 
+	font-weight: 700; 
+	letter-spacing: -1px; 
+	line-height: 32px; 
+}
+
+#btn-search { margin-right: -30px; }
+@media (min-width: 750px) {
+	#btn-search { margin-right: -15px; }
+	#btn-drawer { margin-left: -15px; }
+}
+
+#btn-search, #btn-drawer {
+	cursor: pointer; 
+	padding: 5px 15px; 
+}
+
+#drawer { 
+	position: fixed; 
+	left: -290px; 
+	top: 0; 
+	height: 100%; 
+	width: 280px; 
+	background-color: #fff; 
+	z-index:9999; 
+	transition: left 0.3s ease-in-out;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5); 
+}
+
+.dimmed {
+  position: relative;
+}
+
+.dimmed:before {
+  content: " ";
+  z-index: 9998;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#drawer>a {
+	display: block;
+	padding: 15px 30px; 
+	background-color: #555; 
+	color: #fff; 
+	font-size: 24px; 
+	text-align: center; 
+	letter-spacing: -1px; 
+	font-weight: 700;
+	text-decoration: none;
+}
+#drawer>a:hover { 
+
+}
+
+#drawer .nav>li>a { 
+	padding: 15px 30px; 
+	color: #000 !important; 
+}
+
+#search-form {
+	position: fixed; 
+	left: 0; 
+	top: -60px; 
+	width: 100%; 
+	background-color: rgba(255, 255, 255, 0.5); 
+	z-index:9999; 
+	transition: top 0.3s ease-in-out;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5); 
+}
+
+#navigation { 
+	display: none; 
+	text-transform: uppercase; 
+	font-weight: 600; 
+	border: none; 
+}
+#navigation .dropdown-menu {
+	text-transform: none; 
+}
+
+@media (min-width: 750px) {
+	#navigation { display: block; }
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar {
+  text-align: center;
+}
+
+#navigation .nav .open > a, 
+#navigation .nav .open > a:hover, 
+#navigation .nav .open > a:focus {
+	background-color: transparent; 
+	border-bottom-color: #777; 
+}
+
+#navigation .nav > li > a {
+	border-bottom: medium solid transparent; 
+}
+
+#navigation .nav li.active a { 
+	border-bottom-color: #ccc; 
+}
+
+#navigation .nav > li > a:hover, 
+#navigation .nav > li > a:focus {
+	background-color: transparent;
+	border-bottom-color: #777; 
+}
+
+.divider { 
+	height: 1px; 
+	background-color: #eee; 
+}
+
+.fa-border { border-color: transparent; }
+
+.jumbotron {
+	background-image: url(../images/heros/chicago.jpg); 
+	background-size: cover; 
+	color: #fff; 
+	margin-bottom: 0; 
+}
+
+.jumbotron h1, .jumbotron p { 
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2); 
+}
+
+
+.footer {
+	padding: 30px; 
+}
+
+.footer,
+.footer a { 
+	color: #eee; 
+}
+.footer a:hover,
+.footer a:focus {
+	color: #777; 
+}
+
+#page-footer {
+	background-color: #555; 
+}
+#site-footer {
+	background-color: #333; 
+}
+
+.footer .nav>li>a:hover {
+	background-color: transparent;
+}
+
+main { 
+	padding-top: 30px; 
+	padding-bottom: 30px; 
+}

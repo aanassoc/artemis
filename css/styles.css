@@ -67,14 +67,16 @@ h1, h2, h3 { letter-spacing: -1px; }
 	font-weight: 700;
 	text-decoration: none;
 }
-#drawer>a:hover { 
 
-}
-
-#drawer .nav>li>a { 
+#drawer .nav>li>a {
+	border-left: thick solid transparent;  
 	padding: 15px 30px; 
 	color: #000 !important; 
 }
+#drawer .nav>li.active>a {
+	border-left-color: #777; 
+}
+
 
 #search-form {
 	position: absolute; 
@@ -150,10 +152,14 @@ h1, h2, h3 { letter-spacing: -1px; }
 .fa-border { border-color: transparent; }
 
 .jumbotron {
-	background-image: url(../images/heros/chicago.jpg); 
+	/*background-image: url(../images/heros/chicago.jpg); */
 	background-size: cover; 
 	color: #fff; 
 }
+
+.jumbotron.home { background-image: url(../images/heroes/chicago.jpg); }
+.jumbotron.people { background-image: url(../images/heroes/people.jpg); }
+.jumbotron.friends { background-image: url(../images/heroes/lifetime.jpg); }
 
 .jumbotron h1, .jumbotron p { 
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2); 
@@ -172,6 +178,9 @@ h1, h2, h3 { letter-spacing: -1px; }
 .footer a:hover,
 .footer a:focus {
 	color: #777; 
+}
+.footer h3 { 
+	margin-top: 5px; 
 }
 
 #page-footer {
@@ -207,3 +216,7 @@ p.category {
 	font-weight: 500; 
 	text-transform: uppercase; 
 }
+
+
+.panel-dark { background-color: #333; display: inline-block; }
+.panel-dark .panel-body { padding: 15px 30px 30px; }

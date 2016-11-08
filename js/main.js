@@ -15,3 +15,10 @@ $(document).on('click', '.dimmed', function(e) {
 		$('html').removeClass('dimmed');
 	}
 });
+
+
+$(document).on('click', '#btn-search', function() {
+	$('#search-form').toggleClass('show');
+	$('#search-form input').focus();
+});
+

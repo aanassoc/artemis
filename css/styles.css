@@ -1,6 +1,6 @@
 h1, h2, h3 { letter-spacing: -1px; }
 
-.navbar { margin-bottom: 0; }
+.navbar { margin-bottom: 0; background-color: #fff; }
 
 .navbar-header { 
 	float: left; 
@@ -77,14 +77,24 @@ h1, h2, h3 { letter-spacing: -1px; }
 }
 
 #search-form {
-	position: fixed; 
+	position: absolute; 
 	left: 0; 
-	top: -60px; 
+	top: 60px; 
 	width: 100%; 
-	background-color: rgba(255, 255, 255, 0.5); 
-	z-index:9999; 
+	padding: 30px 15px; 
+	background-color: rgba(255, 255, 255, 1); 
+	z-index: 0; 
 	transition: top 0.3s ease-in-out;
-	box-shadow: 0 0 5px rgba(0,0,0,0.5); 
+	box-shadow: 0 3px 5px rgba(0,0,0,0.2); 
+}
+@media (min-width: 750px) {
+	#search-form { 
+		top: 0px;
+	}
+}
+
+#search-form.show{
+	top: 115px; 
 }
 
 #navigation { 

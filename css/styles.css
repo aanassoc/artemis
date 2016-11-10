@@ -1,4 +1,5 @@
-h1, h2, h3 { letter-spacing: -1px; }
+h1, h2, h3 { letter-spacing: -1px; margin-top: 0; }
+p { margin-bottom: 15px; }
 
 .navbar { margin-bottom: 0; background-color: #fff; }
 
@@ -157,12 +158,11 @@ h1, h2, h3 { letter-spacing: -1px; }
 	color: #fff; 
 }
 
-.jumbotron.home { background-image: url(../images/heroes/chicago.jpg); }
-.jumbotron.people { background-image: url(../images/heroes/people.jpg); }
-.jumbotron.friends { background-image: url(../images/heroes/lifetime.jpg); }
+.jumbotron { background-image: url(../images/image_21x9.svg); }
 
 .jumbotron h1, .jumbotron p { 
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.2); 
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	text-align: center;  
 }
 
 
@@ -200,7 +200,6 @@ h1, h2, h3 { letter-spacing: -1px; }
 
 
 .section-header { 
-	font-size: 16px; 
 	text-transform: uppercase; 
 	font-weight: 500; 
 	border-bottom: thin solid #eee; 
@@ -220,3 +219,7 @@ p.category {
 
 .panel-dark { background-color: #333; display: inline-block; }
 .panel-dark .panel-body { padding: 15px 30px 30px; }
+
+.training { 
+	margin-bottom: 30px; 
+}

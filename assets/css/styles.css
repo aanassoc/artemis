@@ -158,7 +158,7 @@ p { margin-bottom: 15px; }
 	color: #fff; 
 }
 
-.jumbotron { background-image: url(../images/image_21x9.svg); }
+.jumbotron { background-image: url(../img/image_21x9.svg); }
 
 .jumbotron h1, .jumbotron p { 
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);

@@ -1,6 +1,8 @@
 node_modules
 vendor
 susy/*
+scripts
+styles
 *.scss
 16x9
 21x9

@@ -1,0 +1,51 @@
+{% 
+  set classes = [
+    'header',
+    node ? node.getType() : 'view'
+  ]
+%}
+
+<header{{ attributes.addClass(classes) }}  
+{% if node.field_banner.value %}
+  style="background-image: url({{ file_url(node.field_banner.0.entity.uri.value) }}); background-size:cover;"
+{% endif %}
+>
+
+  <div id="search">
+    <div class="container">
+    {{ page.search }}
+    </div>
+  </div>
+
+  <nav class="navbar navbar-static-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a id="btn-drawer" class="pull-left"><span class="fa fa-lg fa-bars"></span></a>
+        <a id="btn-search" class="pull-right"><span class="fa fa-lg fa-search"></span></a>
+        {{ page.header }}
+      </div>
+    </div>
+  </nav>
+
+  <nav id="drawer">
+    {{ page.drawer }}
+  </nav>
+
+  <div id="navigation" class="navbar" role="navigation">
+    <div class="container">
+      {{ page.navigation }}
+    </div>
+  </div>
+
+  <div class="jumbotron" role="banner">
+    <div class="container">
+      {% if node %}
+      {{ page.jumbotron }}
+      <p>{{ node.field_designation.0.entity.name.value }}</p>
+      {% else %}
+      <h1>{{ page['#title'] }}</h1>
+      {% endif %}      
+    </div>
+  </div>
+
+</header>

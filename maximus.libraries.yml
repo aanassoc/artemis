@@ -1,0 +1,12 @@
+global-css:
+  css:
+    theme:
+      assets/css/bootstrap.css: {}
+      assets/css/font-awesome.css: {} 
+      assets/css/style.css: {}
+global-js:
+  js:
+    assets/js/bootstrap.js: {}
+    assets/js/main.js: {}
+  dependencies:
+    - core/jquery

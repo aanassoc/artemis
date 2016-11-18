@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Display Suite 2 column template.
+ *
+ * Available variables:
+ * - outer_wrapper: outer wrapper element
+ * - left_wrapper: wrapper element around left region
+ * - right_wrapper: wrapper element around right region
+ * - attributes: layout attributes
+ * - left_attributes: attributes for left region
+ * - right_attributes: attributes for right region
+ * - left: content of left region
+ * - right: content of right region
+ */
+#}
+<{{ outer_wrapper }}{{ attributes.addClass('ds-2col', 'clearfix') }}>
+
+  {{ title_suffix.contextual_links }}
+
+  <{{ left_wrapper }}{{ left_attributes.addClass('col-md-7') }}>
+    {{ left }}
+  </{{ left_wrapper }}>
+
+  <{{ right_wrapper }}{{ right_attributes.addClass('col-md-4 col-md-offset-1') }}>
+    <div class="panel panel-default training-details">
+      <div class="panel-heading">
+        <h3 class="panel-title">Details</h3>
+      </div>
+      <div class="panel-body">
+        {{ right }}
+      </div>
+    </div>
+  </{{ right_wrapper }}>
+
+</{{ outer_wrapper }}>

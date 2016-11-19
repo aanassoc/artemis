@@ -46,7 +46,7 @@ p { margin-bottom: 15px; }
 #btn-search { margin-right: -30px; }
 @media (min-width: $screen-sm) {
 	#btn-search { margin-right: -15px; }
-	#btn-drawer { display: none; } 
+	/*#btn-drawer { display: none; } */
 }
 
 #btn-search, #btn-drawer {
@@ -131,10 +131,6 @@ p { margin-bottom: 15px; }
 	padding-bottom: 30px; 
 	background-color: rgba(0, 0, 0, 0.95);
 	transition: top 0.3s ease-in-out;    
-}
-
-#edit-actions { 
-	display: none; 
 }
 
 #navigation { 
@@ -294,3 +290,7 @@ body.maintenance-page .content { text-align: center; display: inline-block; }
 body.maintenance-page .smiley { font-size: 5em; line-height: 1; }
 body.maintenance-page h1 { font-size: 4em; font-weight: 400; line-height: 1; }
 body.maintenance-page p { font-weight: 500; }
+
+#search-block-form #edit-actions {
+	display: none; 
+}

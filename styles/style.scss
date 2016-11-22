@@ -273,7 +273,7 @@ p.category {
 
 .spacer { margin-bottom: 15px; }
 
-.views-row { margin-bottom: 15px; }
+.views-row { margin-bottom: 30px; }
 
 article { 
 	margin-bottom: 30px; 
@@ -294,4 +294,8 @@ body.maintenance-page p { font-weight: 500; }
 
 #search-block-form #edit-actions {
 	display: none; 
+}
+
+h4.person-title { 
+	margin-bottom: none; 
 }

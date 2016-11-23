@@ -18,15 +18,12 @@
 
   {{ title_suffix.contextual_links }}
 
-  <{{ left_wrapper }}{{ left_attributes.addClass('col-md-7') }}>
+  <{{ left_wrapper }}{{ left_attributes }}>
     {{ left }}
   </{{ left_wrapper }}>
 
-  <{{ right_wrapper }}{{ right_attributes.addClass('col-md-4 col-md-offset-1') }}>
+  <{{ right_wrapper }}{{ right_attributes }}>
     <div class="panel panel-default training-details">
-      <div class="panel-heading">
-        <h3 class="panel-title">Details</h3>
-      </div>
       <div class="panel-body">
         {{ right }}
       </div>

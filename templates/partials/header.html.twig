@@ -44,7 +44,7 @@
 
       {% if node %}
         
-        {% if node.getType() != 'insight' %}
+        {% if node.getType() == 'insight' %}
         <p>{{ node.body.summary }}</p>
         {% endif %}
 

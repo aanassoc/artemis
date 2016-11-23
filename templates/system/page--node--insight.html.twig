@@ -49,8 +49,6 @@
 
 <main role="main">
     <div class="container">
-        <h2>{{ node.label }}</h2>
-        <p class="lead">{{ node.body.summary }}</p>
         <div class="row">
             {% if page.content %}
             <section class="col-md-8">
@@ -58,7 +56,7 @@
             </section>
             {% endif %}
             {% if page.sidebar %}
-            <aside class="col-md-3 col-md-offset-1" role="complementary">
+            <aside class="col-md-4" role="complementary">
                 {{ page.sidebar }}
             </aside>
             {% endif %}

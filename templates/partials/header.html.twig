@@ -5,11 +5,7 @@
   ]
 %}
 
-<header{{ attributes.addClass(classes) }}  
-{% if node.field_banner.value %}
-  style="background-image: url({{ file_url(node.field_banner.0.entity.uri.value) }}); background-size:cover;"
-{% endif %}
->
+<header{{ attributes.addClass(classes) }}>
 
   <div id="search">
     <div class="container">
@@ -37,7 +33,11 @@
     </div>
   </div>
 
-  <div class="jumbotron" role="banner">
+  <div class="jumbotron" role="banner"  
+{% if node.field_banner.value %}
+  style="background-image: url({{ file_url(node.field_banner.0.entity.uri.value) }}); background-size:cover;"
+{% endif %}
+>
     <div class="container">
       {% if node %}
       {{ page.jumbotron }}

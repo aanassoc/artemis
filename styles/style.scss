@@ -211,6 +211,11 @@ p { margin-bottom: 15px; }
 	text-align: center;  
 }
 
+.jumbotron p:last-child {
+	margin-bottom: 0; 
+}
+
+
 .footer {
 	padding: 30px; 
 }

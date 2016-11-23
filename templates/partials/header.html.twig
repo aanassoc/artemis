@@ -39,9 +39,10 @@
 {% endif %}
 >
     <div class="container">
-      {% if node %}
-        {{ page.jumbotron }}
+      {{ page.jumbotron }}
 
+      {% if node %}
+      
         {% if node.getType() != 'insight' %}
         <p>{{ node.body.summary }}</p>
         {% endif %}
@@ -49,8 +50,7 @@
         {% if node.getType() == 'person' %}
         <p>{{ node.field_designation.0.entity.name.value }}</p>
         {% endif %}
-      {% else %}
-      <h1>{{ page['#title'] }}</h1>
+        
       {% endif %}
     </div>
   </div>

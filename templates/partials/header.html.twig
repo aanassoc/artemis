@@ -41,6 +41,9 @@
     <div class="container">
       {% if node %}
       {{ page.jumbotron }}
+      {% if node.body %}
+      <p>{{ node.body.summary }}</p>
+      {% endif %}
       <p>{{ node.field_designation.0.entity.name.value }}</p>
       {% else %}
       <h1>{{ page['#title'] }}</h1>

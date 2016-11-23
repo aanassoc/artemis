@@ -49,7 +49,7 @@ p { margin-bottom: 15px; }
 #btn-search { margin-right: -30px; }
 @media (min-width: $screen-sm) {
 	#btn-search { margin-right: -15px; }
-	/*#btn-drawer { display: none; } */
+	#btn-drawer { margin-left: -15px; } 
 }
 
 #btn-search, #btn-drawer {

@@ -162,7 +162,7 @@ p { margin-bottom: 15px; }
 #navigation .nav .open > a:hover, 
 #navigation .nav .open > a:focus {
 	background-color: transparent; 
-	border-bottom-color: #eee; 
+	border-bottom-color: #555; 
 }
 
 #navigation .nav > li > a {
@@ -172,13 +172,13 @@ p { margin-bottom: 15px; }
 }
 
 #navigation .nav li a.is-active {  
-	border-bottom-color: #eee; 
+	border-bottom-color: #555; 
 }
 
 #navigation .nav > li > a:hover, 
 #navigation .nav > li > a:focus {
 	background-color: transparent;
-	border-bottom-color: #eee; 
+	border-bottom-color: #555; 
 }
 
 .divider { 

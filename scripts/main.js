@@ -22,7 +22,7 @@
 		if(!$(e.target).is('#drawer') && !$(e.target).is('#drawer *') && !$(e.target).is('#search') && !$(e.target).is('#search *'))
 		{
 			$('#drawer').css('left', -290);
-			$('#search').css('top', -200);  
+			$('#search').css('top', -220);  
 			$('#btn-search').children().removeClass('fa-times').addClass('fa-search'); 
 			$('html').removeClass('dimmed');
 			$('html').removeClass('dark');

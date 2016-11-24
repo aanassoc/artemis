@@ -124,7 +124,7 @@ p { margin-bottom: 15px; }
 #search {
 	position: absolute;
 	width: 100%; 
-	top: -200px; 
+	top: -220px; 
 	z-index: 8888;
 	padding-top: 30px; 
 	padding-bottom: 30px; 
@@ -288,7 +288,10 @@ body.maintenance-page .smiley { font-size: 5em; line-height: 1; }
 body.maintenance-page h1 { font-size: 4em; font-weight: 400; line-height: 1; }
 body.maintenance-page p { font-weight: 500; }
 
-#search-block-form #edit-actions {
+#search h2 { 
+	color: #fff; 
+}
+#search-block-form .form-actions {
 	display: none; 
 }
 

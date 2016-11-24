@@ -8,8 +8,11 @@ p { margin-bottom: 15px; }
 
 .navbar { 
 	margin-bottom: 0; 
-	background-color: transparent; 
+	background-color: #fff; 
 } 
+.topbar { 
+	z-index: 2; 
+}
 .navbar a { 
 	color: #555; 
 }
@@ -124,24 +127,25 @@ p { margin-bottom: 15px; }
 #search {
 	position: absolute;
 	width: 100%; 
-	top: -220px; 
-	z-index: 8888;
+	top: -100px; 
+	z-index: 1;
 	padding-top: 30px; 
 	padding-bottom: 30px; 
-	background-color: rgba(0, 0, 0, 0.95);
+	background-color: #036;
 	transition: top 0.3s ease-in-out;    
 }
 
 #navigation { 
-	display: none; 
+	display: none; // Hide navigation by default 
 	border: none; 
 }
 #navigation .dropdown-menu {
 	text-transform: none; 
 }
-
 @media (min-width: $screen-sm) {
-	#navigation { display: block; }
+	#navigation { 
+		display: block; 
+	}
 }
 
 .navbar .navbar-nav {
@@ -317,4 +321,7 @@ body.maintenance-page p { font-weight: 500; }
 }
 .sr-title { 
 	margin-bottom: 0; 
+}
+#search p.help-block {
+	color: #ccc; 
 }

@@ -104,7 +104,7 @@ p { margin-bottom: 15px; }
 #block-drawer-branding a {
 	display: block;
 	padding: 15px 30px; 
-	background-color: #036; 
+	background-color: #369; 
 	color: #fff !important; 
 	font-size: 24px; 
 	letter-spacing: -1px; 
@@ -184,13 +184,6 @@ p { margin-bottom: 15px; }
 
 .fa-border { border-color: transparent; }
 
-
-.header { 
-	background-color: #fff; 
-	
-	 
-	
-}
 .navbar-static-top, 
 .navbar-nav>li>a { 
 	/*text-shadow: 1px 1px 1px rgba(0,0,0,0.5);*/
@@ -203,13 +196,14 @@ p { margin-bottom: 15px; }
 	margin-bottom: 0;  
 }
 .jumbotron h1, .jumbotron p {
-	color: #fff;  
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	color: #555;  
+	// text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 	text-align: center;  
 }
 
 .jumbotron p:last-child {
 	margin-bottom: 0; 
+	font-weight: 500;
 }
 
 

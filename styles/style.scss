@@ -184,26 +184,24 @@ p { margin-bottom: 15px; }
 
 .fa-border { border-color: transparent; }
 
-.navbar-static-top, 
-.navbar-nav>li>a { 
-	/*text-shadow: 1px 1px 1px rgba(0,0,0,0.5);*/
+.banner {
+	background-color: #036 !important; 
+	// background-image: url(../img/banner.jpg); 
+	background-size: cover;
 }
 
 .jumbotron {
-	background-color: #036; 
-	background-image: url(../img/banner.jpg); 
-	background-size: cover;
-	margin-bottom: 0;  
+	background-color: transparent; 
+	margin-bottom: 0; 
 }
 .jumbotron h1, .jumbotron p {
-	color: #555;  
+	color: #fff;  
 	// text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 	text-align: center;  
 }
 
 .jumbotron p:last-child {
 	margin-bottom: 0; 
-	font-weight: 500;
 }
 
 

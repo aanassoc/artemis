@@ -4,12 +4,13 @@
       <div class="col-md-6">
         <div class="panel panel-dark">
           <div class="panel-body">
-            <h4><em>Sign up for email alerts</em></h4>
-            <p>Select topics and stay current with our latest insights</p>
-            <form id="newsletter" class="form-inline">
-              <input type="text" class="form-control" placeholder="Email address">
-              <button class="btn btn-default" type="submit">Submit</button>
-            </form>
+            <h4><em>{{ site_name }}</em></h4>
+            <address>
+              4, Evacuee Trust Complex, Agha Khan Rd<br>
+              F-5/1, Islamabad 44000, PK<br>
+              <abbr title="Phone">P:</abbr> +92 302 840 4003<br>
+              <abbr title="Email">E:</abbr> info@maxstrategy.org<br>
+            </address>
           </div>
         </div>
       </div>
@@ -21,8 +22,14 @@
 
 <footer id="site-footer" class="footer small">
   <div class="container">
-    <p class="pull-right"><a href="https://goo.gl/bMNH0K" title="Handcrafted">Handcrafted <i class="fa fa-lg fa-code"></i></a></p>
-    <p>&copy; 2016. All rights reserved. 
+    <div class="row">
+      <div class="col-sm-6">
+        <p class="text-left">&copy; 2016 {{ site_name }}</p>
+      </div>
+      <div class="col-sm-6">
+        <p class="text-right"><a href="https://goo.gl/bMNH0K" title="Handcrafted">Handcrafted <i class="fa fa-lg fa-code"></i></a></p>
+      </div>
+    </div> 
   </div>
 </footer>
 

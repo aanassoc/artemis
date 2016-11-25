@@ -3,6 +3,8 @@
 
 html, body { height: 100%; }
 
+*:last-child { margin-bottom: 0 !important; }
+
 h1, h2, h3 { letter-spacing: -1px; margin-top: 0; } 
 p { margin-bottom: 15px; }
 
@@ -86,23 +88,6 @@ p { margin-bottom: 15px; }
   right: 0;
   background: rgba(0, 0, 0, 0.8);
 }
-
-.dark {
-  position: relative;
-}
-
-.dark:before {
-  content: " ";
-  z-index: 999;
-  display: block;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.95);
-}
-  
 
 #block-drawer-branding a {
 	display: block;
@@ -204,10 +189,6 @@ p { margin-bottom: 15px; }
 	text-align: center;  
 }
 
-.jumbotron p:last-child {
-	margin-bottom: 0; 
-}
-
 
 .footer {
 	padding-top: 30px;
@@ -226,6 +207,12 @@ p { margin-bottom: 15px; }
 }
 .footer h3 { 
 	margin-top: 5px; 
+}
+
+@media (max-width: $screen-sm) {
+	.footer p.text-right { 
+		text-align: left !important; 
+	}
 }
 
 #site-footer {
@@ -262,7 +249,7 @@ p.category {
 }
 
 
-.panel-dark { background-color: #024; display: inline-block; }
+.panel-dark { background-color: #024; }
 .panel-dark .panel-body { padding: 15px 30px 30px; }
 .training-details { 
 	background-color: #f8f8f8; 
@@ -276,7 +263,6 @@ p.category {
 .gapper { margin-bottom: 30px; }
 
 .row { margin-bottom: 30px; }
-.row:last-child { margin-bottom: 0; }
 
 article { 
 	margin-bottom: 30px; 

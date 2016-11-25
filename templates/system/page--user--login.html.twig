@@ -45,70 +45,14 @@
  * @ingroup themeable
  */
 #}
-{% 
-  set classes = [
-    'header',
-    node ? node.getType() : 'view'
-  ]
-%}
+{% include directory ~ '/templates/partials/header.html.twig' %}
 
-<header{{ attributes.addClass(classes) }}>
-
-  <nav class="navbar navbar-static-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a id="btn-drawer" class="pull-left"><span class="fa fa-fw fa-lg fa-bars"></span></a>
-        <a id="btn-search" class="pull-right"><span class="fa fa-fw fa-lg fa-search"></span></a>
-        {{ page.header }}
-      </div>
+<main role="main">
+    <div class="container form-horizontal">
+    {% if page.content %}
+        {{ page.content }}
+    {% endif %}
     </div>
-  </nav>
+</main>
 
-  <nav id="drawer">
-    {{ page.drawer }}
-  </nav>
-
-  <div id="navigation" class="navbar" role="navigation">
-    <div class="container">
-      {{ page.navigation }}
-    </div>
-  </div>
-
-  <div id="search">
-    <div class="container">
-    {{ page.search }}
-    </div>
-  </div>
-  
-  <div class="jumbotron banner" role="banner"  
-{% if node.field_banner.value %}
-  style="background-image: url({{ file_url(node.field_banner.0.entity.uri.value) }}); background-size:cover;"
-{% endif %}
->
-    <div class="container">
-
-      {{ page.jumbotron }}
-
-      {% if node %}
-        
-        <p>{{ node.body.summary }}</p>
-
-        {% if node.getType() == 'person' %}
-        <p>{{ node.field_designation.0.entity.name.value }}</p>
-        {% endif %}
-        
-      {# elseif not is_front %}
-      <h1>{{ page['#title'] }}</h1>
-      {% else #}
-
-      {% endif %}
-    </div>
-  </div>
-
-</header>
-
-{#<ol>
-  {% for key, value in _context  %}
-    <li>{{ key }}</li>
-  {% endfor %}
-</ul>#}
+{% include directory ~ '/templates/partials/footer.html.twig' %}

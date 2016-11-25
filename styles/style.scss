@@ -233,7 +233,7 @@ main {
 .section-header { 
 	text-transform: uppercase;
 	font-weight: 500; 
-	margin-top: 15px; 
+	margin-top: 30px; 
 	border-bottom: thin solid #eee; 
 	padding-bottom: 5px; 
 	letter-spacing: -1px; 
@@ -261,6 +261,7 @@ p.category {
 
 .spacer { margin-bottom: 15px; }
 .gapper { margin-bottom: 30px; }
+.gapped { margin-top: 30px; }
 
 .row { margin-bottom: 30px; }
 

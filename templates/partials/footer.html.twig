@@ -1,21 +1,14 @@
 <footer id="page-footer" class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <div class="panel panel-dark">
-          <div class="panel-body">
-            <h4><em>{{ site_name }}</em></h4>
-            <address>
-              4, Evacuee Trust Complex, Agha Khan Rd<br>
-              F-5/1, Islamabad 44000, PK<br>
-              <abbr title="Phone">P:</abbr> +92 302 840 4003<br>
-              <abbr title="Email">E:</abbr> info@maxstrategy.org<br>
-            </address>
-          </div>
-        </div>
+      <div class="col-md-2 col-sm-2 col-xs-6">
+        {{ page.services }}
       </div>
-      {{ page.social }}
-      {{ page.footer }}
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        {{ page.information }}
+      </div>
+      <div class="col-md-2 col-sm-3">
+        {{ page.social }}
     </div>
   </div>
 </footer>
@@ -23,11 +16,11 @@
 <footer id="site-footer" class="footer small">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6">
-        <p class="text-left">&copy; 2016 {{ site_name }}</p>
+      <div class="col-sm-8">
+        {{ page.footer }}
       </div>
-      <div class="col-sm-6">
-        <p class="text-right"><a href="https://goo.gl/bMNH0K" title="Handcrafted">Handcrafted <i class="fa fa-lg fa-code"></i></a></p>
+      <div class="col-sm-4">
+        <p class="text-right"><a href="https://goo.gl/bMNH0K" title="Handcrafted">Handcrafted</a> with <i class="fa fa-heart"></i> in Islamabad</p>
       </div>
     </div> 
   </div>

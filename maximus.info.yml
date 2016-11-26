@@ -17,6 +17,7 @@ regions:
   jumbotron: 'Jumbotron'
   content: 'Content'
   sidebar: 'Sidebar'
-  newsletter: 'Newsletter'
+  services: 'Services Links'
+  information: 'Information Links'
   social: 'Social Links'
   footer: 'Footer Links'

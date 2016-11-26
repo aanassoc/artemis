@@ -260,6 +260,10 @@ main {
 	padding-bottom: 5px; 
 }
 
+aside .section-header:first-child {
+	margin-top: 0; 
+}
+
 .card { margin-bottom: 30px; }
 
 p.category { 

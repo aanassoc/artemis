@@ -8,13 +8,15 @@ p { margin-bottom: 15px; }
 
 .navbar { 
 	margin-bottom: 0; 
-	background-color: #fff; 
+	background-color: transparent; 
 } 
 .topbar { 
 	z-index: 2; 
 }
-.navbar a { 
-	color: #555; 
+.navbar-static-top a,
+.navbar .nav a { 
+	color: #fff;
+	text-shadow: 1px 1px 0 rgba(0,0,0,.2);  
 }
 
 .navbar-header { 
@@ -169,15 +171,20 @@ p { margin-bottom: 15px; }
 
 .fa-border { border-color: transparent; }
 
-.banner {
-	background-color: #036 !important; 
+.header { 
+	background-color: #036 !important;
+}
+
+.banner { 
 	// background-image: url(../img/banner.jpg); 
 	background-size: cover;
 }
 
 .jumbotron {
 	background-color: transparent; 
-	margin-bottom: 0; 
+	margin-bottom: 0;
+	padding-top: 12em;
+	padding-bottom: 12em;  
 }
 .jumbotron h1, .jumbotron p {
 	color: #fff;  

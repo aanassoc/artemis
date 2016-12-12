@@ -52,7 +52,11 @@
   ]
 %}
 
-<header{{ attributes.addClass(classes) }}>
+<header{{ attributes.addClass(classes) }}   
+{% if node.field_banner.value %}
+  style="background-image: url({{ file_url(node.field_banner.0.entity.uri.value) }}); background-size:cover;"
+{% endif %}
+>
 
   <nav class="navbar navbar-static-top">
     <div class="container-fluid">
@@ -80,11 +84,7 @@
     </div>
   </div>
   
-  <div class="jumbotron banner" role="banner"  
-{% if node.field_banner.value %}
-  style="background-image: url({{ file_url(node.field_banner.0.entity.uri.value) }}); background-size:cover;"
-{% endif %}
->
+  <div class="jumbotron banner" role="banner">
     <div class="container">
 
       {{ page.jumbotron }}

@@ -182,10 +182,15 @@ p { margin-bottom: 15px; }
 
 .jumbotron {
 	background-color: transparent; 
-	margin-bottom: 0;
-	padding-top: 12em;
-	padding-bottom: 12em;  
+	margin-bottom: 0;  
 }
+@media (min-width: $screen-sm) {
+	.jumbotron {
+		padding-top: 12em;
+		padding-bottom: 12em;
+	}
+}
+
 .jumbotron h1, .jumbotron p {
 	color: #fff;  
 	// text-shadow: 1px 1px 1px rgba(0,0,0,0.5);

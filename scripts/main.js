@@ -12,7 +12,7 @@
 	$(document).on('click', '#btn-search', function() {
 		if ($('#search').hasClass('open')) {
 			$(this).children().removeClass('fa-times').addClass('fa-search');
-			$('#search').css('top', -150); 
+			$('#search').css('top', -200); 
 			$('#search').removeClass('open');  
 		} else {
 			$(this).children().removeClass('fa-search').addClass('fa-times');

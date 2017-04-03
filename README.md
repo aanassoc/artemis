@@ -1,2 +1,2 @@
 # maximus
-Drupal 8 theme for Max Strategy
+Drupal 8 theme for AAN Associates

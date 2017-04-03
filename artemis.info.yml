@@ -1,13 +1,13 @@
-name: Maximus
-description: Drupal 8 Theme for MaxStrategy - Built on Bootstrap and Fontawesome using custom content-type templates and layouts
+name: Artemis
+description: Drupal 8 Theme for AAN Associates - Built on Bootstrap and Fontawesome using custom content-type templates and layouts
 type: theme
 core: 8.x
-version: '8.1.0'
+version: '2.0.1'
 datestamp: 1477680011
 
 libraries: 
-  - maximus/global-css
-  - maximus/global-js
+  - artemis/global-css
+  - artemis/global-js
 
 regions:
   header: 'Header'

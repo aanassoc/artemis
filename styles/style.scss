@@ -184,12 +184,12 @@ p { margin-bottom: 15px; }
 	background-color: transparent; 
 	margin-bottom: 0;  
 }
-@media (min-width: $screen-sm) {
-	.jumbotron {
-		padding-top: 10em;
-		padding-bottom: 10em;
-	}
-}
+// @media (min-width: $screen-sm) {
+// 	.jumbotron {
+// 		padding-top: 10em;
+// 		padding-bottom: 10em;
+// 	}
+// }
 
 .jumbotron h1, .jumbotron p {
 	color: #fff;  
@@ -199,8 +199,8 @@ p { margin-bottom: 15px; }
 
 
 .footer {
-	padding-top: 30px;
-	padding-bottom: 30px;
+	// padding-top: 30px;
+	// padding-bottom: 30px;
 	// background-color: #036;  
 }
  
@@ -258,9 +258,9 @@ p { margin-bottom: 15px; }
 }
 
 main { 
-	padding-top: 48px; 
-	padding-bottom: 48px;
-	background-color: #fff;  
+	// padding-top: 48px; 
+	// padding-bottom: 48px;
+	// background-color: #fff;  
 }
 
 

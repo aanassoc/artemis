@@ -19,31 +19,31 @@ p { margin-bottom: 15px; }
 	// text-shadow: 1px 1px 0 rgba(0,0,0,.2);  
 }
 
-.navbar-header { 
-	float: left; 
-	padding: 15px; 
-	text-align: center; 
-	width: 100%; 
-}
+// .navbar-header { 
+// 	float: left; 
+// 	padding: 15px; 
+// 	text-align: center; 
+// 	width: 100%; 
+// }
 
-#block-maximus-branding {
-	display: inline-block; // Drupal only
-	margin-left: 0; 
-}
-@media (min-width: $screen-sm) {
-	#block-maximus-branding {
-		margin-left: 30px;
-	}
-} 
+// #block-maximus-branding {
+// 	display: inline-block; // Drupal only
+// 	margin-left: 0; 
+// }
+// @media (min-width: $screen-sm) {
+// 	#block-maximus-branding {
+// 		margin-left: 30px;
+// 	}
+// } 
 
-.navbar-brand { 
-	float:none; 
-	font-size: 24px; 
-	font-weight: 700; 
-	line-height: 32px; 
-}
+// .navbar-brand { 
+// 	float:none; 
+// 	font-size: 24px; 
+// 	font-weight: 700; 
+// 	line-height: 32px; 
+// }
 .navbar-header img { 
-	height: 100px; 
+	height: 50px; 
 }
 
 #btn-search { margin-right: -30px; }
@@ -118,18 +118,18 @@ p { margin-bottom: 15px; }
 // 	transition: top 0.3s ease-in-out;    
 // }
 
-#navigation { 
-	display: none; // Hide navigation by default 
-	border: none; 
-}
-#navigation .dropdown-menu {
-	text-transform: none; 
-}
-@media (min-width: $screen-sm) {
-	#navigation { 
-		display: block; 
-	}
-}
+// #navigation { 
+// 	display: none; // Hide navigation by default 
+// 	border: none; 
+// }
+// #navigation .dropdown-menu {
+// 	text-transform: none; 
+// }
+// @media (min-width: $screen-sm) {
+// 	#navigation { 
+// 		display: block; 
+// 	}
+// }
 
 .navbar .navbar-nav {
   display: inline-block;

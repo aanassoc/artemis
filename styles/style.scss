@@ -257,12 +257,12 @@ body.maintenance-page p { font-weight: 500; }
 }
 
 
-#block-artemis-breadcrumbs ul { list-style: none; margin: 0; padding: 0; }
-#block-artemis-breadcrumbs li { display: inline-block; }
-#block-artemis-breadcrumbs li:before {
-	content: " > ";
-	display: inline-block; margin: 5px; 
-}
-#block-artemis-breadcrumbs li:first-child:before {
-	content: none; 
-}
+// #block-artemis-breadcrumbs ul { list-style: none; margin: 0; padding: 0; }
+// #block-artemis-breadcrumbs li { display: inline-block; }
+// #block-artemis-breadcrumbs li:before {
+// 	content: " > ";
+// 	display: inline-block; margin: 5px; 
+// }
+// #block-artemis-breadcrumbs li:first-child:before {
+// 	content: none; 
+// }

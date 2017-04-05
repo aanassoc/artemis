@@ -49,7 +49,27 @@
 
 <main role="main">
   <div class="container">
-    {{ page.content }}
+    <div class="row">
+
+      {% if page.sidebar %}
+        <aside class="col-md-3" role="complementary">
+          {{ page.sidebar }}
+        </aside>
+      {% endif %}
+
+      {% if page.content %}
+      <section class="col-md-7">
+        {{ page.content }}
+      </section>
+      {% endif %}
+
+      {% if page.aside %}
+      <aside class="col-md-2" role="complementary">
+        {{ page.aside }}
+      </aside>
+      {% endif %}
+      
+    </div>
   </div>
 </main>
 

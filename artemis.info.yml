@@ -11,13 +11,8 @@ libraries:
 
 regions:
   header: 'Header'
-  drawer: 'Drawer'
   navigation: 'Navigation'
-  search: 'Search'
-  jumbotron: 'Jumbotron'
   content: 'Content'
   sidebar: 'Sidebar'
-  services: 'Services Links'
-  information: 'Information Links'
-  social: 'Social Links'
+  aside: 'Aside'
   footer: 'Footer Links'

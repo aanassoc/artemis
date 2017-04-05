@@ -3,12 +3,12 @@
  * Implements hook_theme_suggestions_HOOK_alter().
  */
 
-function maximus_preprocess_page(&$variables, $hook) 
+function artemis_preprocess_page(&$variables, $hook) 
 {
   $variables['site_name'] = \Drupal::config('system.site')->get('name');
 }
 
-function maximus_theme_suggestions_page_alter(array &$suggestions, array $variables) 
+function artemis_theme_suggestions_page_alter(array &$suggestions, array $variables) 
 { 
   if ($node = \Drupal::routeMatch()->getParameter('node')) 
   {
@@ -16,3 +16,21 @@ function maximus_theme_suggestions_page_alter(array &$suggestions, array $variab
   }
 }
 
+/**
+ * Implements hook_preprocess_block().
+ */
+function artemis_preprocess_block(&$variables) {
+  $variables['content']['#attributes']['block'] = $variables['attributes']['id'];
+}
+ 
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function artemis_theme_suggestions_menu_alter(array &$suggestions, array $variables) {
+  // Remove the block and replace dashes with underscores in the block ID to
+  // use for the hook name.
+  if (isset($variables['attributes']['block'])) {
+    $hook = str_replace(array('block-', '-'), array('', '_'), $variables['attributes']['block']);
+    $suggestions[] = $variables['theme_hook_original'] . '__' . $hook;
+  }
+}

@@ -38,7 +38,11 @@
     {% endif %}
     {% for item in items %}
       <li{{ item.attributes }}>
+        {% if item.title == "Facebook" or item.title == "LinkedIn" or item.title == "Twitter" %}
+        <a href="{{ item.url }}"><i class="fa fa-fw fa-{{ item.title | lower }}" aria-hidden="true"></i>&nbsp; {{ item.title }}</a>
+        {% else %}
         {{ link(item.title, item.url) }}
+        {% endif %}
         {% if item.below %}
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
         {% endif %}

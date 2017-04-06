@@ -51,12 +51,6 @@
   <div class="container">
     <div class="row">
 
-      {% if page.sidebar %}
-        <aside class="col-md-3" role="complementary">
-          {{ page.sidebar }}
-        </aside>
-      {% endif %}
-
       {% if page.content %}
       <section class="col-md-6">
         {{ page.content }}
@@ -64,7 +58,7 @@
       {% endif %}
 
       {% if page.aside %}
-      <aside class="col-md-3" role="complementary">
+      <aside class="col-md-6" role="complementary">
         {{ page.aside }}
       </aside>
       {% endif %}

@@ -128,8 +128,11 @@ p { margin-bottom: 15px; }
 	display: inline-block; padding: 5px 0; font-weight: 500; 
 }
 
-#site-footer {
-	// background-color: #024; 
+#site-footer { 
+	padding-top: 15px; 
+}
+#site-footer .container {
+	border-top: thin solid #ccc; 
 }
 #site-footer ul {
 	list-style: none; margin: 0; padding: 0; 

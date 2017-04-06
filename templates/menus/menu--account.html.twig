@@ -39,7 +39,7 @@
     {% for item in items %}
       <li{{ item.attributes }}>
         {% if item.title == "Facebook" or item.title == "LinkedIn" or item.title == "Twitter" %}
-        <a href="{{ item.url }}"><i class="fa fa-fw fa-{{ item.title | lower }}" aria-hidden="true"></i>&nbsp; {{ item.title }}</a>
+        <a href="{{ item.url }}"><i class="fa fa-fw fa-{{ item.title | lower }}" aria-hidden="true"></i></a>
         {% else %}
         {{ link(item.title, item.url) }}
         {% endif %}

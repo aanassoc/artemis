@@ -53,9 +53,9 @@
 %}
 
 <header{{ attributes.addClass(classes) }}>
-
   <nav class="navbar navbar-static-top">
     <div class="container">
+
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
@@ -65,21 +65,11 @@
         </button>
         {{ page.branding }}
       </div>
+
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <div id="navigation" role="navigation">
-          <div class="container">
-            {{ page.navigation }}
-          </div>
-        </div>
+        {{ page.navigation }}
       </div>
+
     </div>
   </nav>
-
 </header>
-
-{#<ol>
-  {% for key, value in _context  %}
-    <li>{{ key }}</li>
-  {% endfor %}
-</ol>#}
-

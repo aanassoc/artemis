@@ -10,8 +10,9 @@ libraries:
   - artemis/global-js
 
 regions:
-  header: 'Header'
+  branding: 'Branding'
   navigation: 'Navigation'
+  header: 'Header'
   content: 'Content'
   sidebar: 'Sidebar'
   aside: 'Aside'

@@ -33,16 +33,16 @@
     {% if menu_level == 0 %}
       <ul{{ attributes.addClass(['sidebar']) }}>
     {% else %}
-      <ul class="dropdown-menu">
+      <ul>
     {% endif %}
     {% for item in items %}
       {% if item.below %}
-        <li{{ item.attributes.addClass() }}>
+        <li{{ item.attributes }}>
       {% else %}
         <li{{ item.attributes }}>
       {% endif %}
         {% if item.below %}
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{item.title}} <span class="caret"></span></a>
+          <a href="#">{{item.title}} <span class="caret"></span></a>
         {% else %}
         {{ link(item.title, item.url) }}
         {% endif %}

@@ -272,3 +272,14 @@ body.maintenance-page p { font-weight: 500; }
 
 
 .lead { color: $red; }
+
+.sidebar { 
+	list-style: none; margin: 0; padding: 0; 
+}
+.sidebar a, .sidebar a:focus, .sidebar a:focus { 
+	display: block; padding: 5px 0; text-decoration: none; 
+}
+.sidebar a:hover { 
+	background-color: $gray-lighter; 
+}
+.sidebar a.is-active { border-left: thick solid $gray; }

@@ -42,11 +42,13 @@
         <a href="#">{{item.title}} <span class="caret"></span></a>
         {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
       {% else %}
-        <li{{ item.attributes }}>
-        {{ link(item.title, item.url) }}
+        {% if menu_level > 0 %}
+          <li{{ item.attributes }}>
+          {{ link(item.title, item.url) }}
+        {% endif %}
       {% endif %}
       </li>
-      
+
     {% endfor %}
     </ul>
   {% endif %}

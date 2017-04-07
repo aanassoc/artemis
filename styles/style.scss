@@ -180,6 +180,9 @@ main {
 	border-bottom: thin solid #eee; 
 	padding-bottom: 5px; 
 }
+.section-header:first-child {
+	margin-top: 0; 
+}
 
 aside .section-header:first-child {
 	margin-top: 0; 

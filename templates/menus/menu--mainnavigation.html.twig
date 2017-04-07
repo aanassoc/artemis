@@ -36,11 +36,7 @@
       <ul>
     {% endif %}
     {% for item in items %}
-      {% if item.below %}
         <li{{ item.attributes }}>
-      {% else %}
-        <li{{ item.attributes }}>
-      {% endif %}
         {% if item.below %}
           <a href="#">{{item.title}} <span class="caret"></span></a>
         {% else %}

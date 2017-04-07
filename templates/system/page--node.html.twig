@@ -50,24 +50,19 @@
 <main role="main">
   <div class="container">
     <div class="row">
-
       <nav class="col-md-3">
         {{ page.sidebar }} 
       </nav>
-
       <div class="col-md-9">
+         {{ page.header }}
         <div class="row">
-          
           <section class="col-md-8">
-            {{ page.header }}
             {{ page.content }}
             {{ page.footer }}
           </section>
-
           <aside class="col-md-4" role="complementary">
             {{ page.aside }}
           </aside>
-
         </div>
       </div>
     </div>

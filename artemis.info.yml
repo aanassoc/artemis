@@ -17,4 +17,5 @@ regions:
   sidebar: 'Sidebar'
   aside: 'Aside'
   footer: 'Footer'
+  legal: 'Legal'
   social: 'Social'

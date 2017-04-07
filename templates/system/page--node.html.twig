@@ -49,31 +49,27 @@
 
 <main role="main">
   <div class="container">
-
-    {% if page.header %}
-      {{ page.header }}
-    {% endif %}
-    
     <div class="row">
 
-      {% if page.sidebar %}
       <nav class="col-md-3">
         {{ page.sidebar }} 
       </nav>
-      {% endif %}
 
-      {% if page.content %}
-      <section class="col-md-6">
-        {{ page.content }}
-      </section>
-      {% endif %}
+      <div class="col-md-9">
+        <div class="row">
+          
+          <section class="col-md-8">
+            {{ page.header }}
+            {{ page.content }}
+            {{ page.footer }}
+          </section>
 
-      {% if page.aside %}
-      <aside class="col-md-3" role="complementary">
-        {{ page.aside }}
-      </aside>
-      {% endif %}
-      
+          <aside class="col-md-4" role="complementary">
+            {{ page.aside }}
+          </aside>
+
+        </div>
+      </div>
     </div>
   </div>
 </main>

@@ -187,6 +187,9 @@ main {
 aside .section-header:first-child {
 	margin-top: 0; 
 }
+aside ul { 
+	padding-left: 20px; 
+}
 
 .card { margin-bottom: 30px; }
 
@@ -265,16 +268,17 @@ body.maintenance-page p { font-weight: 500; }
 
 
 .breadcrumb {
-	margin-top: 15px; 
-	padding-left: 0; 
+	margin-top: 15px;
+	margin-bottom: 0; 
+	padding: 0; 
 	background-color: transparent;
 }
 
 
 .lead { color: $red; }
 
-.sidebar { 
-	list-style: none; margin: 0; padding: 0; 
+.sidebar {
+	list-style: none; margin: 100px 0 0 0; padding: 0; 
 }
 .sidebar a, .sidebar a:focus, .sidebar a:focus { 
 	display: block; padding: 5px; text-decoration: none; 
@@ -286,3 +290,4 @@ body.maintenance-page p { font-weight: 500; }
 }
 .sidebar a.is-active { border-left-color: $gray; background-color: $gray-lighter; }
 .sidebar a.is-active:hover { background-color: $gray-light; }
+

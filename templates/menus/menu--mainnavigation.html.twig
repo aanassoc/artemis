@@ -37,7 +37,7 @@
     {% endif %}
     {% for item in items %}
       {% if item.below %}
-        <li{{ item.attributes.addClass('dropdown') }}>
+        <li{{ item.attributes.addClass() }}>
       {% else %}
         <li{{ item.attributes }}>
       {% endif %}

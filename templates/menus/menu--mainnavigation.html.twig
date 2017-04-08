@@ -30,24 +30,21 @@
 {% macro menu_links(items, attributes, menu_level) %}
   {% import _self as menus %}
   {% if items %}
-    {% if menu_level == 0 %}
+    {% if menu_level > 0 %}
       <ul{{ attributes.addClass(['sidebar']) }}>
-    {% else %}
-      <ul>
     {% endif %}
     {% for item in items %}
 
       {% if item.below %}
-        <li{{ item.attributes }}>
-        <a href="#">{{item.title}} <span class="caret"></span></a>
+        <h3>{{item.title}}</h3>
         {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
       {% else %}
         {% if menu_level > 0 %}
           <li{{ item.attributes }}>
           {{ link(item.title, item.url) }}
+          </li>
         {% endif %}
       {% endif %}
-      </li>
 
     {% endfor %}
     </ul>

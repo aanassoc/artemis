@@ -277,16 +277,19 @@ body.maintenance-page p { font-weight: 500; }
 
 .lead { color: $red; }
 
-.sidebar {
-	list-style: none; margin: 100px 0 0 0; padding: 0; border-top: thin solid $gray-lighter; 
+.sidebar h3 { 
+	margin-top: 58px; 
 }
-.sidebar a, .sidebar a:focus, .sidebar a:focus { 
+.secondary {
+	list-style: none; margin: 0; padding: 0; border-top: thin solid $gray-lighter; 
+}
+.secondary a, .secondary a:focus, .secondary a:focus { 
 	display: block; padding: 5px; text-decoration: none; 
 	border-left: thick solid transparent;
 	border-bottom: thin solid $gray-lighter; 
 }
-.sidebar a:hover { 
+.secondary a:hover { 
 	background-color: $gray-lighter; 
 }
-.sidebar a.is-active { border-left-color: $gray; background-color: $gray-lighter; }
+.secondary a.is-active { border-left-color: $gray; background-color: $gray-lighter; }
 

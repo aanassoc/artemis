@@ -12,6 +12,7 @@ libraries:
 regions:
   branding: 'Branding'
   navigation: 'Navigation'
+  jumbotron: 'Jumbotron'
   header: 'Header'
   content: 'Content'
   sidebar: 'Sidebar'

@@ -47,6 +47,12 @@
 #}
 {% include directory ~ '/templates/partials/header.html.twig' %}
 
+<div class="jumbotron">
+  <div class="container">
+    {{ page.jumbotron }}
+  </div>
+</div>
+
 <main role="main">
   <div class="container">
   {% if page.header %}
@@ -54,6 +60,9 @@
   {% endif %}
   {% if page.content %}
     {{ page.content }}
+  {% endif %}
+  {% if page.footer %}
+    {{ page.footer }}
   {% endif %}
   </div>
 </main>

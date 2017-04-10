@@ -86,8 +86,8 @@ p { margin-bottom: 15px; }
 }
 
 .jumbotron {
-	background-color: transparent; 
-	margin-bottom: 0;  
+	background-color: $red; 
+	margin-bottom: 0; 
 }
 // @media (min-width: $screen-sm) {
 // 	.jumbotron {
@@ -100,6 +100,10 @@ p { margin-bottom: 15px; }
 	color: #fff;  
 	// text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 	text-align: center;  
+}
+.jumbotron h1 a { 
+	color: #fff !important; 
+	text-decoration: none; 
 }
 
 

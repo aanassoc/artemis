@@ -297,3 +297,5 @@ body.maintenance-page p { font-weight: 500; }
 }
 .secondary a.is-active { border-left-color: $red; background-color: $gray-lighter; }
 
+
+.table.sr { counter-reset: rowNumber; }

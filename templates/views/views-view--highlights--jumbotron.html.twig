@@ -33,7 +33,6 @@
 {%
   set classes = [
     dom_id ? 'js-view-dom-id-' ~ dom_id,
-    'schajee'
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
@@ -65,3 +64,7 @@
 
   {{ feed_icons }}
 </div>
+
+{% for row in rows %}
+{{ row.content }}
+{% endfor %}

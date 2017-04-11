@@ -66,5 +66,5 @@
 </div>
 
 {% for row in rows %}
-{{ row.content }}
+{{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_image }}'] }}
 {% endfor %}

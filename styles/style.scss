@@ -37,12 +37,9 @@ p { margin-bottom: 15px; }
 // 	}
 // } 
 
-// .navbar-brand { 
-// 	float:none; 
-// 	font-size: 24px; 
-// 	font-weight: 700; 
-// 	line-height: 32px; 
-// }
+.navbar-brand { 
+	padding: 0 15px !important; 
+}
 .navbar-header img { 
 	height: 50px; 
 }

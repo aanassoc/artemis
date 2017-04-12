@@ -256,7 +256,7 @@ body.maintenance-page p { font-weight: 500; }
 	list-style: none; margin: 0; padding: 0; border-top: thin solid $gray-lighter; 
 }
 .secondary a, .secondary a:focus, .secondary a:focus { 
-	display: block; padding: 5px; text-decoration: none; 
+	display: block; padding: 5px 10px; text-decoration: none; 
 	border-left: thick solid transparent;
 	border-bottom: thin solid $gray-lighter; 
 }

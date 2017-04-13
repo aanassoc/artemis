@@ -40,7 +40,11 @@
         {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
       {% else %}
         {% if menu_level > 0 %}
-          <li{{ item.attributes }}>
+          {% if item.below %}
+            <li{{ item.attributes.addClass('is-active-trail') }}>
+          {% else %}
+            <li{{ item.attributes }}>
+          {% endif %}
           {{ link(item.title, item.url) }}
           </li>
         {% endif %}

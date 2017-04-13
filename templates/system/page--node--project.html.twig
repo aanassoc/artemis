@@ -48,26 +48,22 @@
 {% include directory ~ '/templates/partials/header.html.twig' %}
 
 <main role="main">
-    <div class="container">
-        
-        {% if page.header %}
-            {{ page.header }}
-        {% endif %}
-
-        <div class="row">
-            {% if page.content %}
-            <section class="col-md-8">
-                {{ page.content }}
-            </section>
-            {% endif %}
-            
-            {% if page.aside %}
-            <aside class="col-md-4" role="complementary">
-                {{ page.aside }}
-            </aside>
-            {% endif %}
-        </div>
+  <div class="container">
+    <div class="row">
+      <nav class="col-md-3 sidebar">
+        {{ page.sidebar }} 
+      </nav>
+      <div class="col-md-9">
+        <header>
+          {{ page.header }} 
+        </header>
+        {{ page.content }}
+        <footer>
+          {{ page.footer }}
+        </footer>
+      </div>
     </div>
+  </div>
 </main>
 
 {% include directory ~ '/templates/partials/footer.html.twig' %}

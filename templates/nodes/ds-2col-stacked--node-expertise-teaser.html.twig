@@ -24,11 +24,12 @@
 
   {{ title_suffix.contextual_links }}
 
+<div class="container">
   <{{ header_wrapper }}{{ header_attributes.addClass('header') }}>
     {{ header }}
   </{{ header_wrapper }}>
 
-  <div class="container">
+  
     <div class="row">
 
     <{{ left_wrapper }}{{ left_attributes.addClass('col-md-6') }}>
@@ -40,9 +41,9 @@
     </{{ right_wrapper }}>
 
     </div>
-  </div>
+  
   <{{ footer_wrapper }}{{ footer_attributes.addClass('footer') }}>
     {{ footer }}
   </{{ footer_wrapper }}>
-
+</div>
 </{{ outer_wrapper }}>

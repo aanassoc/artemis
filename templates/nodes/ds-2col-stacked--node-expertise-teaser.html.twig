@@ -24,13 +24,9 @@
 
   {{ title_suffix.contextual_links }}
   
-  <div class="row">
-
-  <{{ header_wrapper }}{{ header_attributes.addClass('header') }}>
+  <{{ header_wrapper }}{{ header_attributes.addClass('col-xs-12 header') }}>
     {{ header }}
   </{{ header_wrapper }}>
-
-    
 
     <{{ left_wrapper }}{{ left_attributes.addClass('col-md-6') }}>
       {{ left }}
@@ -40,10 +36,8 @@
       {{ right }}
     </{{ right_wrapper }}>
   
-  <{{ footer_wrapper }}{{ footer_attributes.addClass('footer') }}>
+  <{{ footer_wrapper }}{{ footer_attributes.addClass('col-xs-12 footer') }}>
     {{ footer }}
   </{{ footer_wrapper }}>
-
-  </div>
 
 </{{ outer_wrapper }}>

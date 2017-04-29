@@ -28,18 +28,19 @@
     {{ header }}
   </{{ header_wrapper }}>
 
-  <div class="row">
+  <div class="container">
+    <div class="row">
 
-  <{{ left_wrapper }}{{ left_attributes.addClass('col-md-6') }}>
-    {{ left }}
-  </{{ left_wrapper }}>
+    <{{ left_wrapper }}{{ left_attributes.addClass('col-md-6') }}>
+      {{ left }}
+    </{{ left_wrapper }}>
 
-  <{{ right_wrapper }}{{ right_attributes.addClass('col-md-6') }}>
-    {{ right }}
-  </{{ right_wrapper }}>
+    <{{ right_wrapper }}{{ right_attributes.addClass('col-md-6') }}>
+      {{ right }}
+    </{{ right_wrapper }}>
 
+    </div>
   </div>
-  
   <{{ footer_wrapper }}{{ footer_attributes.addClass('footer') }}>
     {{ footer }}
   </{{ footer_wrapper }}>

@@ -23,14 +23,14 @@
 <{{ outer_wrapper }}{{ attributes.addClass('ds-2col-stacked', 'clearfix') }}>
 
   {{ title_suffix.contextual_links }}
+  
+  <div class="row">
 
-<div class="container">
   <{{ header_wrapper }}{{ header_attributes.addClass('header') }}>
     {{ header }}
   </{{ header_wrapper }}>
 
-  
-    <div class="row">
+    
 
     <{{ left_wrapper }}{{ left_attributes.addClass('col-md-6') }}>
       {{ left }}
@@ -39,11 +39,11 @@
     <{{ right_wrapper }}{{ right_attributes.addClass('col-md-6') }}>
       {{ right }}
     </{{ right_wrapper }}>
-
-    </div>
   
   <{{ footer_wrapper }}{{ footer_attributes.addClass('footer') }}>
     {{ footer }}
   </{{ footer_wrapper }}>
-</div>
+
+  </div>
+
 </{{ outer_wrapper }}>

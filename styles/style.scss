@@ -56,14 +56,13 @@ p { margin-bottom: 15px; }
 
 .jumbotron {
 	background-color: $red; 
-	// margin-bottom: 0; 
 }
-// @media (min-width: $screen-sm) {
-// 	.jumbotron {
-// 		padding-top: 10em;
-// 		padding-bottom: 10em;
-// 	}
-// }
+@media (min-width: $screen-sm) {
+	.jumbotron {
+		padding-top: 10em;
+		padding-bottom: 10em;
+	}
+}
 
 .jumbotron h1, .jumbotron p {
 	color: #fff;  

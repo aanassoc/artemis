@@ -269,3 +269,10 @@ body.maintenance-page p { font-weight: 500; }
 .views-view-grid h4 a { display: block; white-space: nowrap; overflow: hidden; } 
 
 .more-link { text-align: right; }
+
+ul.expertise { 
+	padding-left: 25px; 
+}
+ul.expertise a { 
+	color: $red !important;
+}

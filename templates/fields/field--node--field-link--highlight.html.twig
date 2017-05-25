@@ -47,11 +47,20 @@
   {% else %}
     {% for item in items %}
       {# Make sure the link is styled to output URL only #}
-      <div{{ attributes }}>
+      {#<div{{ attributes }}>#}
       {#<a class="btn btn-default" href="{{ item.url }}">{{ item.title }}</a></div>#}
       {#<a class="btn btn-default" href="{{ item.content.field_link.0.url }}">{{ item.content.field_link.0.title }}</a>#}
-      {{ item.content }}
-      </div>
+      {#{{ item.content }}#}
+      {#</div>#}
+      {%
+        set link_classes = [
+          'btn',
+          (loop.index0 == 0) ? 'btn--primary' : 'btn--inverted'
+        ]
+      %}
+      {% set content = item.content %}
+      {% set content = content|merge({ '#attributes': { class: link_classes } }) %}
+      {{ content }}
     {% endfor %}
   {% endif %}
 {% else %}

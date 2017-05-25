@@ -49,18 +49,6 @@
 
 {{ page.jumbotron }}
 
-<main role="main">
-  <div class="container">
-  {% if page.header %}
-    {{ page.header }}
-  {% endif %}
-  {% if page.content %}
-    {{ page.content }}
-  {% endif %}
-  {% if page.footer %}
-    {{ page.footer }}
-  {% endif %}
-  </div>
-</main>
+{{ page.content }}
 
 {% include directory ~ '/templates/partials/footer.html.twig' %}

@@ -47,7 +47,7 @@
   {% else %}
     {% for item in items %}
       {# Make sure the link is styled to output URL only #}
-      <div{{ attributes }}><a class="btn btn-default" href="{{ item.content }}">Read More</a></div>
+      <div{{ attributes }}><a class="btn btn-default" href="{{ item.content }}">{{ item.title }}</a></div>
     {% endfor %}
   {% endif %}
 {% else %}

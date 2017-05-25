@@ -51,7 +51,7 @@
         {#{{ item.attributes }}#}
         {#<a class="btn btn-default" href="{{ item.url }}">{{ item.title }}</a></div>#}
         {#<a class="btn btn-default" href="{{ item.content.field_link.0.url }}">{{ item.content.field_link.0.title }}</a>#}
-        {{ item.content.addClass('btn-default') }}
+        {{ item.content }}
       </div>
     {% endfor %}
   {% endif %}

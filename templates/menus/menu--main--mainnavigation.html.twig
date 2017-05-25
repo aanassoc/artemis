@@ -45,7 +45,7 @@
       %}
 
       {% if item.below %}
-        <h3>{{item.title}}</h3>
+        <h3>{{ link(item.title, item.url) }}</h3>
         {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
       {% else %}
         {% if menu_level > 0 %}

@@ -48,10 +48,10 @@
     {% for item in items %}
       {# Make sure the link is styled to output URL only #}
       <div{{ attributes }}>
-        {{ item.attributes.addClass('btn-default') }}
+        {#{{ item.attributes }}#}
         {#<a class="btn btn-default" href="{{ item.url }}">{{ item.title }}</a></div>#}
         {#<a class="btn btn-default" href="{{ item.content.field_link.0.url }}">{{ item.content.field_link.0.title }}</a>#}
-        {{ item.content }}
+        {{ item.content.addClass('btn-default') }}
       </div>
     {% endfor %}
   {% endif %}

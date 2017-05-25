@@ -49,7 +49,7 @@
       {# Make sure the link is styled to output URL only #}
       <div{{ attributes }}>
       {#<a class="btn btn-default" href="{{ item.url }}">{{ item.title }}</a></div>#}
-      <a class="btn btn-default" href="{{ content.field_link.0['#url_title'] }}">{{ content.field_link.0['#title'] }}</a>
+      <a class="btn btn-default" href="{{ node.field_link.0.url }}">{{ node.field_link.0.title }}</a>
       </div>
     {% endfor %}
   {% endif %}

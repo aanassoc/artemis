@@ -279,9 +279,11 @@ body.maintenance-page p { font-weight: 500; }
 
 .highlight .container { padding-top: 45px; padding-bottom: 45px; }
 
-.vertical-align {
-    display: flex;
-    align-items: center;
+@media screen and (min-width: $screen-sm) { 
+	.vertical-align {
+		display: flex;
+		align-items: center;
+	}	
 }
 
 .light { font-weight: 400; }

@@ -242,7 +242,7 @@ body.maintenance-page p { font-weight: 500; }
 }
 
 
-.lead { color: $red; }
+.lead.red { color: $red; }
 
 .sidebar h3 { 
 	margin-top: 58px; 
@@ -281,3 +281,5 @@ body.maintenance-page p { font-weight: 500; }
   display: flex; 
   align-items: center; 
 }
+
+.light { font-weight: 400; }

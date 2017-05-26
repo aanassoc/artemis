@@ -3,7 +3,7 @@
 
 html, body { height: 100%; }
 a, a:hover, a:focus { color: $gray-darker; }
-h1, h2, h3 { margin-top: 0; } 
+h1, h2, h3 { margin-top: 0; font-weight: 400; } 
 p { margin-bottom: 15px; }
 
 .navbar { 
@@ -287,3 +287,5 @@ body.maintenance-page p { font-weight: 500; }
 }
 
 .light { font-weight: 400; }
+
+.translucent { background-color: rgba(0,0,0,0.5); padding-top: 15px; padding-bottom: 15px; }

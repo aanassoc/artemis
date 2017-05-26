@@ -14,11 +14,11 @@
  * - right: content of right region
  */
 #}
-<{{ outer_wrapper }}{{ attributes.addClass('ds-2col', 'clearfix') }}>
+<{{ outer_wrapper }}{{ attributes }}>
 
   {{ title_suffix.contextual_links }}
 
-  <{{ left_wrapper }}{{ left_attributes }}>
+  <{{ left_wrapper }}{{ left_attributes.addClass('translucent') }}>
     {{ left }}
   </{{ left_wrapper }}>
 

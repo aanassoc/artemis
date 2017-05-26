@@ -274,3 +274,10 @@ body.maintenance-page p { font-weight: 500; }
 .expertise a { color: $red !important; }
 
 .highlight .container { padding-top: 45px; padding-bottom: 45px; }
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+  display: flex; 
+  align-items: center; 
+}

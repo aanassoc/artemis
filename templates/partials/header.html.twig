@@ -86,8 +86,9 @@
         <div class="col-md-6 translucent">
           {{ page.jumbotron }}
         </div>
-        
-      
+        {% if node %}
+          <p class="lead red">{{ node.body.summary }}</p>
+        {% endif %} 
       </div>
     </div>
   </div>

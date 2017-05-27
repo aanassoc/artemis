@@ -11,7 +11,16 @@ p { margin-bottom: 15px; }
 	padding-top: 15px; 
 	padding: 15px 0; 
 } 
-.navbar-static-top { z-index: 1 !important; } 
+.navbar-static-top { 
+	z-index: 1 !important; 
+} 
+.navbar-inverse { 
+	background-color: transparent; 
+	border: none; 
+}
+.navbar-inverse .navbar-nav > li > a { 
+	color: #fff; 
+}
 .navbar-brand { 
 	padding: 0 15px !important; 
 }
@@ -288,4 +297,4 @@ body.maintenance-page p { font-weight: 500; }
 
 .light { font-weight: 400; }
 
-.translucent { background-color: rgba(0,0,0,0.5); padding-top: 15px; padding-bottom: 15px; }
+.translucent { background-color: rgba(0,0,0,0.75); padding-top: 15px; padding-bottom: 15px; }

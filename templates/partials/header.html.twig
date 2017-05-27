@@ -78,6 +78,20 @@
 
   {% if (is_front) %}
   {{ page.jumbotron }}
+  {% else %}
+
+  <div class="jumbotron banner" role="banner">
+    <div class="container">
+
+      {{ page.jumbotron }}
+
+      {% if node %}
+        <p>{{ node.body.summary }}</p>
+      {% endif %}
+      
+    </div>
+  </div>
+
   {% endif %}
   
 </header>

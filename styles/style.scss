@@ -68,12 +68,12 @@ p { margin-bottom: 15px; }
 	background-color: transparent; 
 }
 
-@media screen and (min-width: $screen-sm) { 
-	.jumbotron {
-		padding-top: 96px;
-		padding-bottom: 96px;
-	}
-}
+// @media screen and (min-width: $screen-sm) { 
+// 	.jumbotron {
+// 		padding-top: 96px;
+// 		padding-bottom: 96px;
+// 	}
+// }
 
 .jumbotron h1, .jumbotron p {
 	color: #fff;  

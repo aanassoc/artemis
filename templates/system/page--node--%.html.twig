@@ -57,6 +57,9 @@
         <header>
           {{ page.header }} 
         </header>
+        {% if node %}
+          <p class="lead red">{{ node.body.summary }}</p>
+        {% endif %}
         <div class="row">
           <section class="col-md-8">
             {{ page.content }}

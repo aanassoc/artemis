@@ -10,23 +10,17 @@ p { margin-bottom: 15px; }
 	margin-bottom: 0; 
 	padding-top: 15px; 
 	padding: 15px 0; 
+	background-color: #fff; 
 } 
 .navbar-static-top { 
 	z-index: 1 !important; 
 } 
-.navbar-inverse { 
-	background-color: transparent; 
-	border: none; 
-}
-.navbar-inverse .navbar-nav > li > a { 
-	color: #fff; 
-}
 .navbar-brand { 
 	padding: 0 15px !important; 
 }
 .navbar-header img { 
 	height: 90px;
-	border: thin solid #e7e7e7;
+	border: thin solid #fff;
 }
 
 #navigation .nav .open > a, 
@@ -68,12 +62,12 @@ p { margin-bottom: 15px; }
 	background-color: transparent; 
 }
 
-// @media screen and (min-width: $screen-sm) { 
-// 	.jumbotron {
-// 		padding-top: 96px;
-// 		padding-bottom: 96px;
-// 	}
-// }
+@media screen and (min-width: $screen-sm) { 
+	.jumbotron {
+		padding-top: 96px;
+		padding-bottom: 96px;
+	}
+}
 
 .jumbotron h1, .jumbotron p {
 	color: #fff;  
